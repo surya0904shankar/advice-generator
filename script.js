@@ -1,4 +1,4 @@
-let box=document.querySelector(".container");
+
 let adviceId=document.querySelector(".advice-id");
 let adviceText=document.querySelector(".advice-text");
 const advice =fetch("https://api.adviceslip.com/advice");
@@ -10,4 +10,5 @@ advice.then((response)=>{
     adviceText.innerHTML=`"${data.slip.advice}"`;
 }).catch((error)=>{
     console.log("error");
+
 });
